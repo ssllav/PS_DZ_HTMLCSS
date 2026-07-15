@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div>
+
+                <div>
+                    <h1>Регистрация</h1>
+                    <p> Уже есть аккаунт? <a href="#" target="_blank" rel="noopener noreferrer">Войти</a> </p>
+                </div>
+                <div>
+                    <form action="/register" method="post">
+                        <div>
+                            <input type="text" name="company" value="Моя компания" required>
+                        </div>
+                        <div>
+                            <input type="text" name="first_name" placeholder="Имя" maxlength="15" required>
+                            <input type="text" name="last_name" placeholder="Фамилия" maxlength="20" required>
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="E-mail" minlength="5" maxlength="25" required>
+                        </div>
+                        <div>
+                             <button type="submit">Зарегистрироваться</button>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="agree" required>
+                                Я прочитал и принимаю <a href="#" target="_blank" rel="noopener noreferrer">Условия
+                                    использования</a>
+                            </label>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
